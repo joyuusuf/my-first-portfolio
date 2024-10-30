@@ -40,6 +40,7 @@ html {
   box-sizing: border-box;
 }
 
+
 ul {
   list-style-type: none;
 }
@@ -58,10 +59,11 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,8 +75,12 @@ nav {
 
 
   nav h1 {
-    color: var(--primary-color);
+    color: rebeccapurple;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(5, 2, 14, 0.1);
+    /* box-shadow: rgba(235, 73, 9, 0.3); */
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+
     
   }
   
@@ -117,10 +123,14 @@ nav {
   .hero img {
     height: 45rem;
     width: 37rem;
+    border-radius: 2%;
+    margin-top: 1rem;
+
   }
   
   .bio-title{
     color: rgba(52, 87, 57, 0.842);
+    text-align: center;
   }
   .bio {
     width: 25rem;
@@ -152,7 +162,9 @@ nav {
   .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
-    color: tomato;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: bold;
+    /* color: ; */
 
   }
 
@@ -160,7 +172,7 @@ nav {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
   }
   
   .skill-header {
@@ -198,6 +210,7 @@ nav {
   .projects-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
@@ -210,6 +223,7 @@ nav {
     text-align: center;
     width: 21.875rem;
     padding: 1rem;
+    width: 20rem;
   }
 
   .project-container p {
@@ -230,6 +244,10 @@ nav {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+    font-size: 0.8rem;
+    height: 23rem;
+    width: 23rem;
+
   }
 
   .contact {
@@ -298,13 +316,15 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 1%;
-    bottom: 50%;
+    right: 0;
+    bottom: 2%;
+    font-size: 0.7rem;
+    /* z-index: 2; */
   }
   
   .socicon {
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   .scroll-up {
@@ -323,6 +343,11 @@ nav {
     
     nav {
         padding: 1.5rem 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
       }
 
       nav ul {
@@ -350,18 +375,18 @@ nav {
       }
 
       .hero {
-        margin-top: -5rem;
+        margin-top: 2rem;
         flex-direction: column;
         gap: 0;
       }
     
       .hero img {
             height: 37.5rem;
-            width: 30rem;
+            width: fit-content;
         }
     
       .bio {
-        margin-top: -7rem;
+        margin-top: 7rem;
         width: 20.5rem;
       }
 
@@ -401,6 +426,14 @@ nav {
 
 
   @media screen and (max-width: 420px) {
+
+    nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+    }
     .hero img {
       height: 37.5rem;
       width: 23rem;
