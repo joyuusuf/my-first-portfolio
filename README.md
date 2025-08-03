@@ -23,3 +23,28 @@ This site can be easily updated as new projects are completed or skills are adde
 - CSS3 – For styling and responsive design (including Flexbox/Grid)
 - JavaScript (Vanilla) – For interactive features
 
+
+
+
+## 🚀 How to Use
+
+To run the portfolio locally:
+
+1. Clone or download the repo:
+   ```bash
+   git clone https://github.com/your-username/your-portfolio-repo.git
+
+
+2. Open index.html in any web browser.
+
+You can also deploy the site to GitHub Pages or any static hosting provider like Netlify or Vercel.
+
+
+
+
+📜 License
+This project is open for personal or educational use. If you plan to reuse the design or structure for commercial purposes, please give proper credit.
+
+
+📝 Customization
+Feel free to edit the HTML content, update project links, and adjust styles to make it your own. The layout is built to be flexible and extendable.
